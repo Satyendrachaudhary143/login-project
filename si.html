@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        .container{
+            width: 450px;
+            height: 600px;
+            border: 2px solid black;
+          text-align: center; 
+         
+          
+        }
+
+.ab{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+#sub{
+    width: 330px;
+    height: 50px;
+ 
+    font-size: 25px;
+    font-weight: 700;
+}
+label{
+    font-size: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="container">
+            <h1>EMI Calculater</h1>
+            <form action="">      
+   <div class="ab"> 
+      <label for="Amount">Enter Amount</label> <input type="number" name="Amount" id="amt">
+    </div>
+
+    <div class="ab">  
+         <label for="rate">Enter Rate</label> <input type="number" name="rate" id="rate">
+    </div>
+     <div class="ab"> 
+         <label for="time">Enter Year</label><input type="number" name="time" id="time">
+    </div>
+    </form>
+      <button id="sub" onclick="ab()">Submit</button>
+      
+      <h3 id="si"></h3>
+        <h3 id="siamt"></h3>
+      <h3 id="ci"></h3>
+      <h3 id="ciamt"></h3>
+        </div>
+
+
+    </div>
+<script>
+    function ab() {
+    var amt = parseInt(document.getElementById("amt").value);
+    var rt = parseInt(document.getElementById("rate").value);
+    var time = parseInt(document.getElementById("time").value);
+      var r = (amt*rt*time)/100;
+       document.getElementById("si").innerHTML="Simple intrest is: "+r;
+       document.getElementById("siamt").innerHTML="Simple Intrest Total Amount: "+(r+amt);
+       var rc = amt*(Math.pow(((100+rt)/100),time));
+       var cimt=Math.round(rc);
+       var ci = cimt-amt;
+       document.getElementById("ci").innerHTML="Compount intrest is: "+ci;
+       document.getElementById("ciamt").innerHTML="Compound Total Amount is: "+cimt;
+
+    }
+</script>
+</body>
+</html>

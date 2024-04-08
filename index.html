@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+ <link rel="stylesheet" href="login.css">
+ <link
+ rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+    
+<div class="maindiv" id="logindiv">
+
+
+
+<div id="loginin" class="animate__animated animate__flipInY">
+    <h1>Login</h1>
+<form action="" autocomplete="off" id="login_form">
+    <input type="email" placeholder="Email Id" class="in" required id="login_email"><br>
+    <small id="emai_not">Email not register</small>
+    <input type="password" placeholder="Password" class="in" required id="login_pas"><br>
+    <small id="wrong_p">Wrong Password </small>
+    <input type="submit" value="Login" id="btn">
+    
+
+</form>
+<p>Don't have account ? <span id="Sign_link" onclick="sigj()" >Sign Up</span></p>
+<div class="img1">
+    <img src="hp.png" alt="">
+    <a href="https://wa.me/918840859444"><img src="logo whatsapp.png" alt="" id="whats"></a>
+    <a href="tel:+918840859444"><img src="phone.png" alt=""id="whats"></a>
+    <a href="https://www.instagram.com/satyendrachaudhary143?igsh=YzljYTk1ODg3Zg=="><img src="insta.jpg" alt="" id="whats"></a>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+    
+<div class="maindiv1" id="signupdiv">
+    
+    <div id="loginin1"class="animate__animated animate__flipInY">
+        <h1>Sign Up</h1>
+    <form action="" autocomplete="off" id="sign_form">
+        <input type="text" placeholder="Name" class="in1" id="name" required><br>
+        <input type="email" placeholder="Email Id" class="in1" id="email" required><br>
+        <small id="warning">Email is Already exist....</small>
+        <input type="number" placeholder="Phone no." class="in1" id="phone"required><br>
+        <input type="password" placeholder="Password" class="in1" id="password" required><br>
+        <input type="submit" value="Sign Up" id="btn1">
+    </form>
+    <div>
+        <p>Already have account ? <span id="login_link" onclick="logj()">Login</span></p>
+        <div class="img">
+            <img src="hp.png" alt="">
+            <a href="https://wa.me/918840859444"><img src="logo whatsapp.png" alt="" id="whats"></a>
+            <a href="tel:+918840859444"><img src="phone.png" alt=""id="whats"></a>
+            <a href="https://www.instagram.com/satyendrachaudhary143?igsh=YzljYTk1ODg3Zg=="><img src="insta.jpg" alt="" id="whats"></a>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+
+    <script src="login.js"></script>
+     <script src="login_signup.js"></script>
+</body>
+</html>

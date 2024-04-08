@@ -1,0 +1,197 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#profile_pic{
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    /* border: 2px solid black; */
+    box-shadow: 8px 8px 5px rgb(168, 166, 166);
+ 
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+      
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    background-color: rgb(245, 144, 245);
+}
+#profile{
+    border-radius: 50%;
+   
+    text-align: center;
+  /* background-image: url("whats.png"); */
+    border: 2px solid black;
+    /* box-shadow: 8px px 5px rgb(168, 166, 166); */
+ 
+    height: 150px;
+    width: 150px;
+    position: relative;
+    overflow: hidden;
+   
+}
+#user{
+    font-size: 140px;
+    color: #ccc;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+    
+
+
+}
+#profile_upload{
+    width: 147px;
+    height: 147px;
+ 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+}
+#Upload_text{
+    font-size: 23px;
+    color: gray;
+    margin: 10px 0;
+}
+#btn{
+    height: 30px;
+    width: 250px;
+    background-color: rgb(239, 11, 239);
+    border: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: rgb(2,0,36);
+    display: none;
+background: linear-gradient(90deg, rgb(5, 2, 76) 0%, rgba(161,13,233,0.9663515064228817) 80%);
+cursor: pointer;    
+}
+
+
+body{
+    background-color: rgb(248, 186, 248);
+}
+
+#menubar{
+    width: 100%;
+    height: 100px;
+    background-color:powderblue;
+}
+
+#profile_amg{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+ 
+}
+#user_name{
+    text-align: center;
+    margin-top: 100px;
+}
+#app{
+ width: 100%;
+ height: 350px;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+}
+@media (max-width:576px) {
+   #app{
+    flex-direction: column;
+   }
+
+    
+}
+#contact,#player,#logout{
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#contact:hover,#player:hover,#logout:hover{
+    width: 170px;
+    height: 120px;
+      box-shadow: 8px px 5px rgb(168, 166, 166); 
+      transition: 0.5s;
+}
+
+#contact i{
+    font-size: 50px;
+    color: purple;
+}
+#player i{
+    font-size: 50px;
+    color: purple;
+}
+#logout i{
+    font-size: 50px;
+    color: purple;
+}
+#contact p{
+    margin-top: 10px;
+}
+#player p{
+    margin-top: 5px;
+}
+#logout p{
+    margin-top: 5px;
+}
+
+
+#footer{
+    margin-top: 50px;
+    background-color: purple;
+    border: 2px solid black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer p{
+    font-size: 25px;
+}
+#footer a{
+    text-decoration: none;
+    color: black;
+}
+@media (max-width:576px) {
+  #footer p{
+  font-size: 18px;
+  }
+ 
+     
+ }
+ #main{
+    display: none;
+ }
